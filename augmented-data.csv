@@ -1,0 +1,225 @@
+Country,Fertility,GDP,DEV
+Australia,1.77,43000.0,Developed
+Moldova,1.56,3800.0,Not-Developed
+Cambodia,2.66,2600.0,Not-Developed
+Cote d'Ivoire,3.63,1800.0,Not-Developed
+Dominica,2.05,14300.0,Not-Developed
+Israel,2.62,34900.0,Developed
+Mauritania,4.07,2200.0,Not-Developed
+Slovenia,1.33,27400.0,Developed
+Algeria,2.78,7500.0,Not-Developed
+Monaco,1.52,65500.0,Developed
+Philippines,3.06,4700.0,Not-Developed
+New Zealand,2.05,30400.0,Developed
+Costa Rica,1.91,12900.0,Not-Developed
+French Polynesia,1.95,22000.0,Not-Developed
+Slovakia,1.39,24700.0,Not-Developed
+Hungary,1.42,19800.0,Not-Developed
+Fiji,2.51,4900.0,Not-Developed
+Italy,1.42,29600.0,Developed
+Togo,4.53,1100.0,Not-Developed
+Northern Mariana Islands,2.01,13600.0,Not-Developed
+Aruba,1.84,25300.0,Not-Developed
+Macau,0.93,82400.0,Not-Developed
+Bangladesh,2.45,2100.0,Not-Developed
+Belgium,1.65,37800.0,Developed
+Switzerland,1.54,46000.0,Developed
+United Arab Emirates,2.36,29900.0,Not-Developed
+Jordan,3.16,6100.0,Not-Developed
+Syria,2.68,5100.0,Not-Developed
+Papua New Guinea,3.24,2900.0,Not-Developed
+Bolivia,2.8,5500.0,Not-Developed
+Indonesia,2.18,5200.0,Not-Developed
+Suriname,2.01,12900.0,Not-Developed
+New Caledonia,1.99,37700.0,Not-Developed
+Western Sahara,4.07,2500.0,Not-Developed
+Singapore,0.8,62400.0,Developed
+Nepal,2.3,1500.0,Not-Developed
+Afghanistan,5.43,1100.0,Not-Developed
+Haiti,2.79,1300.0,Not-Developed
+Malta,1.54,27500.0,Developed
+Macedonia,1.59,10800.0,Not-Developed
+Nauru,2.93,5000.0,Not-Developed
+Bosnia and Herzegovina,1.26,8300.0,Not-Developed
+Cook Islands,2.27,9100.0,Not-Developed
+Paraguay,1.96,6800.0,Not-Developed
+Lesotho,2.78,2200.0,Not-Developed
+Luxembourg,1.77,77900.0,Developed
+Japan,1.4,37100.0,Developed
+Ireland,2.0,41300.0,Developed
+Burkina Faso,5.93,1500.0,Not-Developed
+Seychelles,1.88,25900.0,Not-Developed
+Argentina,2.25,18600.0,Not-Developed
+Thailand,1.5,9900.0,Not-Developed
+Gabon,4.49,19200.0,Not-Developed
+Maldives,1.76,9100.0,Not-Developed
+Taiwan,1.11,39600.0,Developed
+Gibraltar,1.92,43000.0,Not-Developed
+Kazakhstan,2.34,14100.0,Not-Developed
+Chad,4.68,2500.0,Not-Developed
+British Virgin Islands,1.25,42300.0,Not-Developed
+Comoros,3.76,1300.0,Not-Developed
+Czech Republic,1.43,26300.0,Developed
+Kiribati,2.56,6400.0,Not-Developed
+Ethiopia,5.23,1300.0,Not-Developed
+Guyana,2.14,8500.0,Not-Developed
+Andorra,1.38,37200.0,Developed
+Spain,1.48,30100.0,Developed
+Lithuania,1.29,22600.0,Not-Developed
+Senegal,4.52,2100.0,Not-Developed
+Botswana,2.37,16400.0,Not-Developed
+Turks and Caicos Islands,1.7,29100.0,Not-Developed
+Poland,1.33,21100.0,Not-Developed
+Grenada,2.09,13800.0,Not-Developed
+Trinidad and Tobago,1.71,20300.0,Not-Developed
+Angola,5.43,6300.0,Not-Developed
+Liberia,4.81,700.0,Not-Developed
+Yemen,4.09,2500.0,Not-Developed
+Tokelau,-9.0,1000.0,Not-Developed
+Belize,3.02,8800.0,Not-Developed
+Nicaragua,1.99,4500.0,Not-Developed
+Solomon Islands,3.36,3400.0,Not-Developed
+Niue,-9.0,5800.0,Not-Developed
+Antigua and Barbuda,2.03,18400.0,Not-Developed
+Croatia,1.45,17800.0,Not-Developed
+Oman,2.86,29800.0,Not-Developed
+Faroe Islands,2.38,30500.0,Developed
+Mauritius,1.77,16100.0,Not-Developed
+Virgin Islands,1.75,14500.0,Not-Developed
+Namibia,2.25,8200.0,Not-Developed
+Sweden,1.88,40900.0,Developed
+Honduras,2.86,4800.0,Not-Developed
+Madagascar,4.28,1000.0,Not-Developed
+Marshall Islands,3.22,8700.0,Not-Developed
+Brazil,1.79,12100.0,Not-Developed
+Libya,2.07,11300.0,Not-Developed
+South Africa,2.23,11500.0,Developed
+Greece,1.41,23600.0,Developed
+Montserrat,1.29,8500.0,Not-Developed
+Tonga,3.36,8200.0,Not-Developed
+Brunei,1.82,54800.0,Not-Developed
+West Bank,2.83,2900.0,Not-Developed
+Guatemala,2.99,5300.0,Not-Developed
+United Kingdom,1.9,37300.0,Developed
+Dominican Republic,2.36,9700.0,Not-Developed
+Isle of Man,1.94,53800.0,Not-Developed
+Turkey,2.08,15300.0,Developed
+Canada,1.59,43100.0,Developed
+Greenland,2.06,38400.0,Not-Developed
+Cabo Verde,2.34,4400.0,Not-Developed
+Rwanda,4.62,1500.0,Not-Developed
+North Korea,1.98,1800.0,Not-Developed
+Sudan,3.92,2600.0,Not-Developed
+Palau,1.71,10500.0,Not-Developed
+Latvia,1.35,19100.0,Not-Developed
+Guinea,4.93,1100.0,Not-Developed
+Tunisia,2.0,9900.0,Not-Developed
+Morocco,2.15,5500.0,Not-Developed
+Mongolia,2.22,5900.0,Not-Developed
+Curacao,2.09,15000.0,Not-Developed
+Netherlands,1.78,41400.0,Developed
+Jersey,1.66,57000.0,Developed
+Benin,5.04,1600.0,Not-Developed
+Vanuatu,3.36,4800.0,Not-Developed
+Cuba,1.46,10200.0,Not-Developed
+Samoa,2.94,6200.0,Not-Developed
+American Samoa,2.98,8000.0,Not-Developed
+Mali,6.16,1100.0,Not-Developed
+Nigeria,5.25,2800.0,Not-Developed
+Cameroon,4.82,2400.0,Not-Developed
+Bhutan,2.02,7000.0,Not-Developed
+Kyrgyzstan,2.68,2500.0,Not-Developed
+Azerbaijan,1.91,10800.0,Not-Developed
+Burma,2.18,1700.0,Not-Developed
+Saint Lucia,1.77,13100.0,Not-Developed
+Ghana,4.09,3500.0,Not-Developed
+Zimbabwe,3.56,600.0,Not-Developed
+Anguilla,1.75,12200.0,Not-Developed
+Central African Republic,4.46,700.0,Not-Developed
+Germany,1.43,39500.0,Developed
+Uzbekistan,1.8,3800.0,Not-Developed
+Bermuda,1.95,86000.0,Developed
+Zambia,5.76,1800.0,Not-Developed
+Guernsey,1.55,44600.0,Developed
+Somalia,6.08,600.0,Not-Developed
+Sint Maarten,2.09,15400.0,Not-Developed
+Lebanon,1.74,15800.0,Not-Developed
+Mexico,2.29,15600.0,Not-Developed
+Democratic Republic of the Congo,4.8,400.0,Not-Developed
+Austria,1.43,42600.0,Developed
+Qatar,1.92,102100.0,Not-Developed
+Tuvalu,3.03,3500.0,Not-Developed
+Romania,1.32,13200.0,Not-Developed
+The Gambia,3.85,2000.0,Not-Developed
+Finland,1.73,35900.0,Developed
+Barbados,1.68,25100.0,Not-Developed
+Saint Kitts and Nevis,1.78,16300.0,Not-Developed
+Republic of the Congo,4.73,4800.0,Not-Developed
+Puerto Rico,1.64,16300.0,Not-Developed
+Cyprus,1.46,24500.0,Developed
+Mozambique,5.27,1200.0,Not-Developed
+Iceland,1.88,40700.0,Developed
+Eritrea,4.14,1200.0,Not-Developed
+Iran,1.85,12800.0,Not-Developed
+South Korea,1.25,33200.0,Developed
+Federated States of Micronesia,2.55,7300.0,Not-Developed
+El Salvador,1.95,7500.0,Not-Developed
+India,2.51,4000.0,Not-Developed
+China,1.55,9800.0,Not-Developed
+Saint Pierre and Miquelon,1.56,34900.0,Not-Developed
+Swaziland,2.88,5700.0,Not-Developed
+Bulgaria,1.44,14400.0,Not-Developed
+Panama,2.38,16500.0,Not-Developed
+Tajikistan,2.76,2300.0,Not-Developed
+Belarus,1.47,16100.0,Not-Developed
+Wallis and Futuna,1.76,3800.0,Not-Developed
+Peru,2.22,11100.0,Not-Developed
+Vietnam,1.85,4000.0,Not-Developed
+The Bahamas,1.97,32000.0,Not-Developed
+Liechtenstein,1.69,89400.0,Developed
+Guinea-Bissau,4.3,1200.0,Not-Developed
+Timor-Leste,5.11,21400.0,Not-Developed
+Laos,2.9,3100.0,Not-Developed
+Venezuela,2.35,13600.0,Not-Developed
+Sri Lanka,2.13,6500.0,Not-Developed
+Sao Tome and Principe,4.67,2200.0,Not-Developed
+Iraq,3.41,7100.0,Not-Developed
+Niger,6.89,800.0,Not-Developed
+Denmark,1.73,37800.0,Developed
+Serbia,1.42,11100.0,Not-Developed
+Equatorial Guinea,4.66,25700.0,Not-Developed
+Guam,2.38,28700.0,Not-Developed
+Djibouti,2.47,2700.0,Not-Developed
+France,2.08,35700.0,Developed
+Egypt,2.87,6600.0,Not-Developed
+Russia,1.61,18100.0,Not-Developed
+Turkmenistan,2.1,9700.0,Not-Developed
+Ukraine,1.3,7400.0,Not-Developed
+Malawi,5.66,900.0,Not-Developed
+Malaysia,2.58,17500.0,Not-Developed
+and Tristan da Cunha  Ascension Saint Helena,1.58,7800.0,Not-Developed
+Kenya,3.54,1800.0,Not-Developed
+Colombia,2.07,11100.0,Not-Developed
+Jamaica,2.05,9000.0,Not-Developed
+South Sudan,5.43,1400.0,Not-Developed
+Uganda,5.97,1500.0,Not-Developed
+Albania,1.5,8200.0,Not-Developed
+Chile,1.84,19100.0,Not-Developed
+Hong Kong,1.17,52700.0,Developed
+Ecuador,2.29,10600.0,Not-Developed
+Cayman Islands,1.86,43800.0,Not-Developed
+Estonia,1.46,22400.0,Not-Developed
+Pakistan,2.86,3100.0,Not-Developed
+Bahrain,1.81,29800.0,Not-Developed
+Armenia,1.64,6300.0,Not-Developed
+Burundi,6.14,600.0,Not-Developed
+Georgia,1.77,6100.0,Not-Developed
+Saudi Arabia,2.17,31300.0,Not-Developed
+Portugal,1.52,22900.0,Developed
+Tanzania,4.95,1700.0,Not-Developed
+Norway,1.86,55400.0,Developed
+Uruguay,1.84,16600.0,Not-Developed
+Saint Vincent and the Grenadines,1.84,12100.0,Not-Developed
+Kuwait,2.53,42100.0,Not-Developed
+Sierra Leone,4.83,1400.0,Not-Developed
+United States,2.01,52800.0,Developed

@@ -1,6 +1,7 @@
 (ns cpi-vis.core
   (:require [clojure.java.io :as io]
-            [clojure.string :as string]))
+            [clojure.string :as string])
+  (:use [incanter core charts stats datasets io]))
 
 (def *fertility-corpus* "rawdata_2127.txt")
 (def *gdp-per-capita-corpus* "rawdata_2004.txt")
@@ -81,14 +82,105 @@
                       (slurp "fertility.csv")))))]
     (with-open [wrtr (io/writer "data.csv")]
       (binding [*out* wrtr]
-       (doseq
-           [row
-            (filter
-             identity
-             (map
-              (fn [k]
-                (when (and (fertility k)
-                           (gdp k))
-                  (str k "," (fertility k) "," (gdp k))))
-              (keys fertility)))]
-         (println row))))))
+        (println "Country,Fertility,GDP")
+        (doseq [row
+                (filter
+                 identity
+                 (map
+                  (fn [k]
+                    (when (and (fertility k)
+                               (gdp k))
+                      (str k "," (fertility k) "," (gdp k))))
+                  (keys fertility)))]
+          (println row))))))
+
+(def *developed-countries* (set
+                            ["Andorra"
+                             "Faroe Islands"
+                             "Ireland"
+                             "Monaco"
+                             "Spain"
+                             "Australia"
+                             "Finland"
+                             "Israel"
+                             "Netherlands"
+                             "Sweden"
+                             "Austria"
+                             "France"
+                             "Italy"
+                             "New Zealand"
+                             "Switzerland"
+                             "Belgium"
+                             "Germany"
+                             "Japan"
+                             "Norway"
+                             "Turkey"	
+                             "Bermuda"
+                             "Greece"
+                             "Liechtenstein"
+                             "Portugal"
+                             "United Kingdom"
+                             "Canada"
+                             "Holy See"
+                             "Luxembourg"
+                             "San Marino"
+                             "United States"
+                             "Denmark"
+                             "Iceland"
+                             "Malta"
+                             "South Africa"
+                             "Cyprus"
+                             "Czech Republic"
+                             "Hong Kong"
+                             "South Korea"
+                             "Singapore"
+                             "Slovak Republic"
+                             "Slovenia"
+                             "Taiwan"
+                             "Guernsey"
+                             "Jersey"]))
+
+(defn augment-dataset
+  []
+  (with-open [wrtr (io/writer "augmented-data.csv")]
+    (binding [*out* wrtr]
+      (do
+        (println "Country,Fertility,GDP,DEV")
+        (doseq [l (rest
+                   (string/split-lines
+                    (slurp "data.csv")))]
+          (let [[country fer gdp] (string/split l #",")
+
+                line
+                (if (some #{country} *developed-countries*)
+                  (str country "," fer "," gdp ",Developed")
+                  (str country "," fer "," gdp ",Not-Developed"))]
+            (println line)))))))
+
+(defn generate-full-plot
+  [data-file]
+  (let [data (read-dataset data-file :header true)
+
+        plt
+        (scatter-plot :Fertility
+                      :GDP
+                      :group-by :DEV
+                      :data
+                      data
+                      :legend
+                      true
+                      :title
+                      "GDP vs Fertility. Red circle represents developed countries")]
+    (add-lines plt
+               (map (fn [x] 2.1)
+                    (rest (sel data :cols 2)))
+               (rest (sel data :cols 2))
+               :series-label "UN-Recommended Fertility Level")))
+
+(defn save-plot
+  []
+  (do
+   (save
+    (generate-full-plot "augmented-data.csv")
+    "gdp_vs_fertility.png"
+    :width 900)))
