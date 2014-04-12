@@ -140,6 +140,13 @@
                              "Guernsey"
                              "Jersey"]))
 
+(def *asian-tiger-countries* (set ["Japan"
+                                   "Taiwan"
+                                   "Singapore"
+                                   "South Korea"
+                                   "Hong Kong"
+                                   "Japan"]))
+
 (defn augment-dataset
   []
   (with-open [wrtr (io/writer "augmented-data.csv")]
@@ -156,6 +163,34 @@
                   (str country "," fer "," gdp ",Developed")
                   (str country "," fer "," gdp ",Not-Developed"))]
             (println line)))))))
+
+(defn developed-dataset
+  []
+  (with-open [wrtr (io/writer "developed-data.csv")]
+    (binding [*out* wrtr]
+      (do
+        (println "Country,Fertility,GDP")
+        (doseq [l (rest
+                   (string/split-lines
+                    (slurp "data.csv")))]
+          (let [[country fer gdp] (string/split l #",")]
+
+            (when (some #{country} *developed-countries*)
+              (println (str country "," fer "," gdp)))))))))
+
+(defn asian-tiger-dataset
+  []
+  (with-open [wrtr (io/writer "asian-tiger-data.csv")]
+    (binding [*out* wrtr]
+      (do
+        (println "Country,Fertility,GDP")
+        (doseq [l (rest
+                   (string/split-lines
+                    (slurp "data.csv")))]
+          (let [[country fer gdp] (string/split l #",")]
+
+            (when (some #{country} *asian-tiger-countries*)
+              (println (str country "," fer "," gdp)))))))))
 
 (defn generate-full-plot
   [data-file]
@@ -177,10 +212,38 @@
                (rest (sel data :cols 2))
                :series-label "UN-Recommended Fertility Level")))
 
+(defn generate-smaller-plot
+  [data-file title]
+  (let [data (read-dataset data-file :header true)
+
+        plt
+        (scatter-plot :Fertility
+                      :GDP
+                      :data data
+                      :legend true
+                      :title title)]
+    (add-lines plt
+               (map (fn [x] 2.1)
+                    (rest (sel data :cols 2)))
+               (rest (sel data :cols 2))
+               :series-label "UN-Recommended Fertility Level")))
+
 (defn save-plot
   []
   (do
    (save
     (generate-full-plot "augmented-data.csv")
     "gdp_vs_fertility.png"
+    :width 900)
+   (save
+    (generate-smaller-plot
+     "asian-tiger-data.csv"
+     "GDP vs Fertility - Developed Asian Economies")
+    "gdp_vs_fertility-asian-tiger.png"
+    :width 900)
+   (save
+    (generate-smaller-plot
+     "developed-data.csv"
+     "GDP vs Fertility - Developed Economies")
+    "gdp_vs_fertility-developed.png"
     :width 900)))
